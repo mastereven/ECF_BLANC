@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: beige;
+}
+
+body {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.flexrowCenter {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.marginLeftNav {
+    margin-left: 50px;
+}
+
+.marginLeftNav:hover {
+    color: white
+}
