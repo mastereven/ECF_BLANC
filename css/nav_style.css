@@ -19,8 +19,11 @@ body {
 
 .marginLeftNav {
     margin-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(47, 47, 47);
 }
 
 .marginLeftNav:hover {
-    color: white
+    color: #5bc03c
 }

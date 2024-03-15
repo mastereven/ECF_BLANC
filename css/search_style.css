@@ -1,0 +1,30 @@
+/* #champ {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 50px;
+    border-color: #5BC03C;
+    border-style: solid;
+    background-color: white;
+}
+
+#chercher {
+    display: flex;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-color: #5BC03C;
+    background-color: #5BC03C;
+    color: #F0F0F0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#chercher:hover {
+    background-color: #52ad37;
+    color: #ececec;
+    border-color: #52ad37;
+}
+.moduleSearch {
+    display: flex;
+    flex-direction: row;
+} */
