@@ -15,14 +15,14 @@ async function GetRecipe() {
         let plateOrigin = c.strArea;
         let plateIngredientMeasure = [];
         for (let i = 1; i < 21; i++) {
-            if(!c[`strIngredient${i}`]) break;
-            let ingredient = c[`strIngredient${i}`];
-            let measure = c[`strMeasure${i}`];
-            let ingredientMeasure = `${ingredient}` + ` ` + `${measure}`;
-            console.log(ingredientMeasure);
-            if (ingredientMeasure) {
-                plateIngredientMeasure.push(ingredientMeasure);
-            }
+          if (!c[`strIngredient${i}`]) break;
+          let ingredient = c[`strIngredient${i}`];
+          let measure = c[`strMeasure${i}`];
+          let ingredientMeasure = `${ingredient}` + ` ` + `${measure}`;
+          console.log(ingredientMeasure);
+          if (ingredientMeasure) {
+            plateIngredientMeasure.push(ingredientMeasure);
+          }
         }
         htmlRecipePart.innerHTML += `
           <div class="Recipe">
@@ -30,10 +30,11 @@ async function GetRecipe() {
             <h2>Catégorie : ${plateCat}<br>
             Zone géographique : ${plateOrigin}<br><br> 
             </h2>
-            <h1>Ingrédients:<br><br>- ${plateIngredientMeasure.join(`.<br>-`)}</h1>
+            <h1>Ingrédients:<br><br>- ${plateIngredientMeasure.join(
+              `.<br>-`
+            )}</h1>
           </div>`;
       }
-    
     })
     .catch((err) => {
       console.log(err);
