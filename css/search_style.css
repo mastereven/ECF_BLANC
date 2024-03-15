@@ -1,4 +1,4 @@
-/* #champ {
+#champ {
     display: flex;
     padding-left: 10px;
     padding-right: 50px;
@@ -27,4 +27,4 @@
 .moduleSearch {
     display: flex;
     flex-direction: row;
-} */
+}
