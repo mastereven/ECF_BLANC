@@ -12,11 +12,14 @@ async function GetUrlCategory() {
         let plateName = SuccessCategory.meals[i].strMeal;
         let plateImgSrc = SuccessCategory.meals[i].strMealThumb;
         htmlCorrectCat.innerHTML += `
-        <a href="Recipe.html?id=${plateId}">
+        <a href="Recipe.html?id=${plateId} id="vigntext">
                 <div class="tagsFood">
-                    <p><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
+                    <p class="vignette"><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
                 </div>
-            </a>`;
+            </a>
+            <style>
+
+            </style>`;
       }
     })
     .catch((err) => {

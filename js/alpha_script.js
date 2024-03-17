@@ -6,6 +6,7 @@ async function GetFoodByLetter() {
     htmlCorrectCat.innerHTML = ""
       let choosenLetter = this.textContent;
       let UrlFoodLetter = `https://www.themealdb.com/api/json/v1/1/search.php?f=${choosenLetter}`;
+      
       //chercher bouffe par lettre
 
       let xhr = fetch(UrlFoodLetter)

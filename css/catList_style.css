@@ -1,0 +1,8 @@
+#ChoosenCategory {
+    display: flex;
+    flex-direction:row;
+
+}
+#vigntext {
+    background-color: black;
+}
