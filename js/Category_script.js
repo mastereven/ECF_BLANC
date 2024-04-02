@@ -7,16 +7,18 @@ async function GetUrlCategory() {
     })
     .then(function (SuccessCategory) {
       let htmlCorrectCat = document.getElementById("ChoosenCategory");
+      console.log(htmlCorrectCat)
       for (i = 0; i < SuccessCategory.meals.length - 1; i++) {
         let plateId = SuccessCategory.meals[i].idMeal;
         let plateName = SuccessCategory.meals[i].strMeal;
         let plateImgSrc = SuccessCategory.meals[i].strMealThumb;
         htmlCorrectCat.innerHTML += `
-        <a href="Recipe.html?id=${plateId} id="vigntext">
+        <a href="Recipe.html?id=${plateId}">
                 <div class="tagsFood">
                     <p class="vignette"><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
                 </div>
-            </a>
+                </a>
+            
             <style>
 
             </style>`;

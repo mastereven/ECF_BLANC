@@ -2,13 +2,11 @@ async function GetFoodByCountry() {
   const letters = document.querySelectorAll(".wichLetter");
   letters.forEach((letters) => {
     letters.addEventListener("click", function (event) {
-      let htmlCorrectCat = document.getElementById("results");
+      let htmlCorrectCat = document.getElementById("ChoosenCategory");
       htmlCorrectCat.innerHTML = "";
       let choosenLetter = this.textContent;
       console.log(choosenLetter);
       let UrlFoodLetter = `https://www.themealdb.com/api/json/v1/1/filter.php?a=${choosenLetter}`;
-
-      //chercher bouffe par lettre
 
       let xhr = fetch(UrlFoodLetter)
         .then(function (promise) {

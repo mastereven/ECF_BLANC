@@ -21,7 +21,7 @@ async function GetFoodByLetter() {
             htmlCorrectCat.innerHTML += `
             <a href="Recipe.html?id=${plateId}">
                   <div class="tagsFood">
-                      <p><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
+                      <p id="textAndImage"><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
                   </div>
               </a>`;
           }

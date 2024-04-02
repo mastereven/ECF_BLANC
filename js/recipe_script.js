@@ -13,6 +13,8 @@ async function GetRecipe() {
         let plateName = c.strMeal;
         let plateCat = c.strCategory;
         let plateOrigin = c.strArea;
+        let plateRecipe = c.strInstructions;
+        let plateImg = c.strMealThumb;
         let plateIngredientMeasure = [];
         for (let i = 1; i < 21; i++) {
           if (!c[`strIngredient${i}`]) break;
@@ -25,15 +27,19 @@ async function GetRecipe() {
           }
         }
         htmlRecipePart.innerHTML += `
-          <div class="Recipe">
-            <h1>${plateName}</h1><br>
-            <h2>Catégorie : ${plateCat}<br>
-            Zone géographique : ${plateOrigin}<br><br> 
-            </h2>
-            <h1>Ingrédients:<br><br>- ${plateIngredientMeasure.join(
-              `.<br>-`
-            )}</h1>
-          </div>`;
+      <div class="Recipe">
+        <h1>${plateName}</h1>
+        <img src="${plateImg}" title="${plateName} alt="recipe for ${plateName}" width="350" id="imgJs">
+        <div class="infoplate">
+            <h2>Catégorie:</h2>
+            <p> ${plateCat} </p>
+            <h2> Zone géographique: </h2>
+            <p>${plateOrigin}</p>
+            <h2>Ingrédients:<h2>
+            <p>${plateIngredientMeasure.join(`.<br>`)}</p>
+            <p>${plateRecipe}</p>
+        </div>
+      </div>`;
       }
     })
     .catch((err) => {

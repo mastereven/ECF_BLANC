@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greta-Eat</title>
+    <link rel="stylesheet" href="css/body_style.css">
+    <link rel="stylesheet" href="css/catList_style.css">
+    <link rel="stylesheet" href="css/recipe_style.css">
+    <link rel="stylesheet" href="css/footer_style.css">
     <link rel="stylesheet" href="css/nav_style.css">
-    <link rel="stylesheet" href="css/A-Z_style.css">
+    <link rel="stylesheet" href="css/Country_style.css">
+
+    <script src="https://kit.fontawesome.com/67f347911c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <h1>A-Z*</h1>
         <nav>
-
-            <ul>
-                <li class="flexrowCenter">
-                    <img src="assets/Image/Geat.png" alt="FastFood" title="Greta-Eat_Logo" id="logo"></p>
-                    <a href="index.html" class="marginLeftNav">Home</a>
+            <div id="MainBox">
+                <img src="assets/Image/Logo.png" alt="Burger" title="Greta-Eat_Logo" id="logo">
+                <div id="SecondaryBox">
+                    <a href="index.html" class="marginLeftNav">
+                        <i class="fas fa-home" aria-hidden=""></i>
+                    </a>
                     <a href="A-Z.html" class="marginLeftNav">A-Z</a>
                     <a href="catList.html" class="marginLeftNav">Catégories</a>
                     <a href="Geo.html" class="marginLeftNav">Zones géographiques</a>
                     <a href="search.html" class="marginLeftNav">Rechercher </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -57,10 +63,20 @@
             <a class="wichLetter">Unknown</a>
             <a class="wichLetter">Vietnamese</a>
         </div>
-        
-        <div id="results"></div>
+
+        <div id="ChoosenCategory"></div>
     </main>
 </body>
+<footer>
+    <ul>
+        <li>
+            <p>fait par Even PAUNER</p>
+        </li>
+        <li>
+            <p>ECF Blanc GRETA-Provence</p>
+        </li>
+    </ul>
+</footer>
 <script src="js/country_script.js" defer=""></script>
 
 </html>

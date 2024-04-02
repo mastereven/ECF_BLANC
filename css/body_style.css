@@ -1,0 +1,7 @@
+body {
+    background-image: url(../assets/Image/Bg-Desk.png);
+    background-size: cover;
+    margin: 0 150px 0;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+}
