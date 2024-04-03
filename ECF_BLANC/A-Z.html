@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/body_style.css">
     <link rel="stylesheet" href="css/footer_style.css">
     <link rel="stylesheet" href="css/nav_style.css">
-    <link rel="stylesheet" href="css/catList_style.css">
+    <link rel="stylesheet" href="css/A-Z_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,6 @@
 
 <body>
     <header>
-        <h1 id="BaseTitle">Découvrez toutes nos catégories</h1>
         <nav>
             <div id="MainBox">
                 <img src="assets/Image/Logo.png" alt="Burger" title="Greta-Eat_Logo" id="logo">
@@ -37,10 +36,40 @@
             </div>
         </nav>
     </header>
-    <h1 id=>Sélectionnez la catégorie de votre choix</h1>
-    <div id="ChoosenCategory">
-    </div>
+    <main>
+        <div id="alphabet">
+            <a class="wichLetter">A</a>
+            <a class="wichLetter">B</a>
+            <a class="wichLetter">C</a>
+            <a class="wichLetter">D</a>
+            <a class="wichLetter">E</a>
+            <a class="wichLetter">F</a>
+            <a class="wichLetter">G</a>
+            <a class="wichLetter">H</a>
+            <a class="wichLetter">I</a>
+            <a class="wichLetter">J</a>
+            <a class="wichLetter">K</a>
+            <a class="wichLetter">L</a>
+            <a class="wichLetter">M</a>
+            <a class="wichLetter">N</a>
+            <a class="wichLetter">O</a>
+            <a class="wichLetter">P</a>
+            <a class="wichLetter">Q</a>
+            <a class="wichLetter">R</a>
+            <a class="wichLetter">S</a>
+            <a class="wichLetter">T</a>
+            <a class="wichLetter">U</a>
+            <a class="wichLetter">V</a>
+            <a class="wichLetter">W</a>
+            <a class="wichLetter">X</a>
+            <a class="wichLetter">Y</a>
+            <a class="wichLetter">Z</a>
+        </div>
+        <div id="results"></div>
+    </main>
 </body>
+
+<script src="js/alpha_script.js" defer=""></script>
 <footer>
     <ul>
         <li>
@@ -51,6 +80,7 @@
         </li>
     </ul>
 </footer>
-<script src="js/catList_script.js" defer=""></script>
 
 </html>
+
+<!-- Pour la partie des catégorie il faut fetch une url recupérer dans une variable le nom de l'objket et afficher dans l'html la liste des élements e cette catégorie -->

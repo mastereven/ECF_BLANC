@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greta-Eat</title>
-    <link rel="stylesheet" href="css/body_style.css">
-    <link rel="stylesheet" href="css/footer_style.css">
-    <link rel="stylesheet" href="css/nav_style.css">
-    <link rel="stylesheet" href="css/catList_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ranchers&family=Ysabeau+SC:wght@1..1000&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/67f347911c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/body_style.css">
+    <link rel="stylesheet" href="css/footer_style.css">
+    <link rel="stylesheet" href="css/nav_style.css">
+
 </head>
 
 <body>
     <header>
-        <h1 id="BaseTitle">Découvrez toutes nos catégories</h1>
+        <h1 id="BaseTitle">GretaEat</h1>
         <nav>
             <div id="MainBox">
                 <img src="assets/Image/Logo.png" alt="Burger" title="Greta-Eat_Logo" id="logo">
@@ -36,10 +38,36 @@
                 </div>
             </div>
         </nav>
+
     </header>
-    <h1 id=>Sélectionnez la catégorie de votre choix</h1>
-    <div id="ChoosenCategory">
-    </div>
+    <main>
+
+        <article id="adjustcenter">
+            <h1>En manque d'inspiration ? </h1>
+            <p>Cliquez sur les dés !</p>
+            <a href="random.html"><img src="assets/Image/articlealeanonhover.png" alt="Recette_Cuisine"
+                    title="dées_empilés" id="dice" title="Plan_De_Travail_Avec_Décoration_Dées">!</a>
+
+
+            </<article>
+
+            <article id="adjustcenter">
+                <h1>Vous ne savez pas par où commencer ?</h1>
+                <br>
+                <br>
+                <p>Découvrez des recettes du monde entier triées par pays !
+                    <br>
+                    Cliquez sur la terre pour commencer votre
+                    voyage culinaire :
+                </p>
+                <a href="Geo.html">
+                    <p class="button"><img
+                            src="https://media.tenor.com/CKA21kCjN3QAAAAi/ali-yalniz-world-is-spinning.gif"
+                            alt="recette_du_monde" title="planète_terre" id="earth">
+                </a>
+                <article>
+
+    </main>
 </body>
 <footer>
     <ul>
@@ -52,5 +80,8 @@
     </ul>
 </footer>
 <script src="js/catList_script.js" defer=""></script>
+<script src="js/hoverdice.js" defer=""></script>
 
 </html>
+
+<!-- Pour la partie des catégorie il faut fetch une url recupérer dans une variable le nom de l'objket et afficher dans l'html la liste des élements e cette catégorie -->

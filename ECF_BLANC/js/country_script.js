@@ -1,13 +1,12 @@
-async function GetFoodByLetter() {
+async function GetFoodByCountry() {
   const letters = document.querySelectorAll(".wichLetter");
-  letters.forEach((letter) => {
-    letter.addEventListener("click", function (event) {
-      let htmlCorrectCat = document.getElementById("results");
+  letters.forEach((letters) => {
+    letters.addEventListener("click", function (event) {
+      let htmlCorrectCat = document.getElementById("ChoosenCategory");
       htmlCorrectCat.innerHTML = "";
       let choosenLetter = this.textContent;
-      let UrlFoodLetter = `https://www.themealdb.com/api/json/v1/1/search.php?f=${choosenLetter}`;
-
-      //chercher bouffe par lettre
+      console.log(choosenLetter);
+      let UrlFoodLetter = `https://www.themealdb.com/api/json/v1/1/filter.php?a=${choosenLetter}`;
 
       let xhr = fetch(UrlFoodLetter)
         .then(function (promise) {
@@ -19,15 +18,15 @@ async function GetFoodByLetter() {
             let plateName = SuccessCategory.meals[i].strMeal;
             let plateImgSrc = SuccessCategory.meals[i].strMealThumb;
             htmlCorrectCat.innerHTML += `
-            <a href="Recipe.html?id=${plateId}">
-                  <div class="tagsFood">
-                      <p id="textAndImage"><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
-                  </div>
-              </a>`;
+                    <a href="Recipe.html?id=${plateId}">
+                          <div class="tagsFood">
+                              <p><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
+                          </div>
+                      </a>`;
           }
         });
     });
   });
 }
 
-GetFoodByLetter();
+GetFoodByCountry();

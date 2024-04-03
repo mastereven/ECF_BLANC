@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+
+main  {
+    display: flex;
+    flex-direction: column;
+}
+
+#adjustcenter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+}
+
+#earth {
+    margin-top: 248px;;
+}
+
+#dice:hover {
+    background: radial-gradient(ellipse at center, rgb(255, 232, 117) 10%,rgba(255, 251, 237, 0) 51%,rgba(255, 255, 255, 0) 100%);
+}
+
+
+

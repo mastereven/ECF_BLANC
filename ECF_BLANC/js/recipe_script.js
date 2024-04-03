@@ -1,12 +1,14 @@
 async function GetRecipe() {
   const cat = new URLSearchParams(document.location.search).get("id");
   let RecipeUrl = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${cat}`;
+
   let xhr = fetch(RecipeUrl)
     .then(function (promise) {
       return promise.json();
     })
     .then(function (SuccessRecipe) {
       let htmlRecipePart = document.getElementById("ChoosenCategory");
+
       for (let c of SuccessRecipe.meals) {
         let plateName = c.strMeal;
         let plateCat = c.strCategory;

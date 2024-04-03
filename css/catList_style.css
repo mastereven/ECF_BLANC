@@ -4,20 +4,8 @@
     text-decoration: none;
 }
 
-body {
-    margin: 0 150px 0;
-    color: white;
-    font-family: "Noto Sans", sans-serif;
-    background-image: url(../assets/Image/Bg-Desk.png);
 
 
-}
-
-#ChoosenCategory {
-    display: flex;
-    flex-direction: row;
-
-}
 
 .vigntext {
     background-color: black;
@@ -49,7 +37,7 @@ body {
     justify-content: center;
     font-size: larger;
     margin: 0 80px 0;
-    color: white;
+    
 
 }
 
@@ -62,4 +50,5 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }

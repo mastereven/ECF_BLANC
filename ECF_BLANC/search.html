@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greta-Eat</title>
+
+    <link rel="stylesheet" href="css/search_style.css">
+
+    <link rel="stylesheet" href="css/catList_style.css">
     <link rel="stylesheet" href="css/body_style.css">
     <link rel="stylesheet" href="css/footer_style.css">
     <link rel="stylesheet" href="css/nav_style.css">
-    <link rel="stylesheet" href="css/Country_style.css">
+
+
     <script src="https://kit.fontawesome.com/67f347911c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <h1 id="BaseTitle">SEARCH</h1>
         <nav>
             <div id="MainBox">
                 <img src="assets/Image/Logo.png" alt="Burger" title="Greta-Eat_Logo" id="logo">
@@ -30,39 +36,12 @@
         </nav>
     </header>
     <main>
-        <div id="letters">
-            <a class="wichLetter">American</a>
-            <a class="wichLetter">British</a>
-            <a class="wichLetter">Canadian</a>
-            <a class="wichLetter">Chinese</a>
-            <a class="wichLetter">Croatian</a>
-            <a class="wichLetter">Dutch</a>
-            <a class="wichLetter">Egyptian</a>
-            <a class="wichLetter">Filipino</a>
-            <a class="wichLetter">French</a>
-            <a class="wichLetter">Greek</a>
-            <a class="wichLetter">Indian</a>
-            <a class="wichLetter">Irish</a>
-            <a class="wichLetter">Italian</a>
-            <a class="wichLetter">Jamaican</a>
-            <a class="wichLetter">Japanese</a>
-            <a class="wichLetter">Kenyan</a>
-            <a class="wichLetter">Malaysian</a>
-            <a class="wichLetter">Mexican</a>
-            <a class="wichLetter">Moroccan</a>
-            <a class="wichLetter">Polish</a>
-            <a class="wichLetter">Portuguese</a>
-            <a class="wichLetter">Russian</a>
-            <a class="wichLetter">Spanish</a>
-            <a class="wichLetter">Thai</a>
-            <a class="wichLetter">Tunisian</a>
-            <a class="wichLetter">Turkish</a>
-            <a class="wichLetter">Unknown</a>
-            <a class="wichLetter">Vietnamese</a>
-        </div>
-        
-        <div id="results"></div>
-    </main>
+        <div="moduleSearch">
+            <form>
+                <input type="search" id="recherche" placeholder="Rechercher...">
+            </form>
+            </div>
+            <div class="ChoosenCategory"></div>
 </body>
 <footer>
     <ul>
@@ -74,7 +53,9 @@
         </li>
     </ul>
 </footer>
-<script src="js/country_script.js" defer=""></script>
+<script src="js/search_script.js" defer=""></script>
+
 
 </html>
+
 <!-- Pour la partie des catégorie il faut fetch une url recupérer dans une variable le nom de l'objket et afficher dans l'html la liste des élements e cette catégorie -->

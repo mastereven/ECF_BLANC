@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.Recipe {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.infoplate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}

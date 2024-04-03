@@ -2,7 +2,7 @@ async function GetFoodByCountry() {
   const letters = document.querySelectorAll(".wichLetter");
   letters.forEach((letters) => {
     letters.addEventListener("click", function (event) {
-      let htmlCorrectCat = document.getElementById("ChoosenCategory");
+      let htmlCorrectCat = document.getElementById("results");
       htmlCorrectCat.innerHTML = "";
       let choosenLetter = this.textContent;
       console.log(choosenLetter);
@@ -18,11 +18,11 @@ async function GetFoodByCountry() {
             let plateName = SuccessCategory.meals[i].strMeal;
             let plateImgSrc = SuccessCategory.meals[i].strMealThumb;
             htmlCorrectCat.innerHTML += `
-                    <a href="Recipe.html?id=${plateId}">
-                          <div class="tagsFood">
-                              <p><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
-                          </div>
-                      </a>`;
+            <a href="Recipe.html?id=${plateId}">
+            <div class="tagsFood">
+                <p id="textAndImage"><img src="${plateImgSrc}" alt="${plateName} width="150" height="150"><br>${plateName}</p>
+            </div>
+        </a>`;
           }
         });
     });
